@@ -12,6 +12,6 @@ export function fetchExercises() {
           done: false
         }]
       })
-    }, 2000);
+    }, 1000);
   })
 }

@@ -18,8 +18,7 @@ body {
     text-decoration: line-through;
 }
 .add-exercise {
-    margin-top: 30px;
-    border-top: 1px solid #ddd;
+    margin-top: 20px;
     padding: 20px 0 10px 0;
 }
 .add-exercise input, .add-exercise button {
@@ -45,4 +44,7 @@ body {
     position: absolute;
     right: 20px;
     top: 0;
+}
+.msg {
+    color: red;
 }

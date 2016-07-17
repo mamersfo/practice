@@ -24,13 +24,11 @@ export class Practice extends React.Component {
   render() {
     return (
         <div>
-          { this.props.isFetching && <p>LOADING...</p> }
-          <Clear />
-          <h2>Exercises</h2>
-          <ul className="exercises-list">
-            { this.renderExercises() }
-          </ul>
-          <Add />
+        <h2>Practice</h2>
+        <ul className="exercises-list">
+          { this.renderExercises() }
+        </ul>
+        <Add />
         </div>
     )
   }
@@ -38,7 +36,6 @@ export class Practice extends React.Component {
 
 export default connect((state) => {
   return {
-    exercises: state.exercises,
-    isFetching: state.isFetching
+    exercises: state.exercises
   }
 })(Practice)

@@ -1,15 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux';
 
-export class Search extends React.Component {
+export class Exercises extends React.Component {
 
   render() {
     return (
         <div>
-          <h2>Search</h2>
+          <h2>Exercises</h2>
         </div>
     )
   }
 }
 
-export default connect()(Search)
+export default connect()(Exercises)

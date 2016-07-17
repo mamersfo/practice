@@ -227,8 +227,8 @@ System.config({
     "app/reducers": {
       "main": "index.js"
     },
-    "app/components/search": {
-      "main": "Search.js"
+    "app/components/exercises": {
+      "main": "Exercises.js"
     },
     "app/components/practice": {
       "main": "Practice.js"
