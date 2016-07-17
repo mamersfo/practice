@@ -1,0 +1,48 @@
+body {
+    background: #eee;
+}
+#app {
+    width: 600px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px auto;
+}
+#app h1 {
+    margin-top: 0;
+}
+.exercise p:hover {
+    cursor: pointer;
+}
+.done-exercise {
+    text-decoration: line-through;
+}
+.add-exercise {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding: 20px 0 10px 0;
+}
+.add-exercise input, .add-exercise button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.add-exercise button {
+    background: #ddd;
+    border: 1px solid #000;
+}
+.add-exercise button:hover {
+    cursor: pointer;
+}
+.exercise {
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+.exercise a {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
