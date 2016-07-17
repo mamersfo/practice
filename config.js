@@ -12,11 +12,6 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  packages: {
-    'app/reducers': {
-       main: 'index.js'
-    }
-  },
   bundles: {
     "dependency-bundle.js": [
       "npm:react@15.2.1.js",
@@ -228,6 +223,18 @@ System.config({
     ]
   },
 
+  packages: {
+    "app/reducers": {
+      "main": "index.js"
+    },
+    "app/components/search": {
+      "main": "Search.js"
+    },
+    "app/components/practice": {
+      "main": "Practice.js"
+    }
+  },
+
   map: {
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
@@ -236,6 +243,7 @@ System.config({
     "react": "npm:react@15.2.1",
     "react-dom": "npm:react-dom@15.2.1",
     "react-redux": "npm:react-redux@4.4.5",
+    "react-router": "npm:react-router@2.5.2",
     "redux": "npm:redux@3.5.2",
     "redux-thunk": "npm:redux-thunk@2.1.0",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -346,6 +354,13 @@ System.config({
       "promise": "npm:promise@7.1.1",
       "ua-parser-js": "npm:ua-parser-js@0.7.10"
     },
+    "npm:history@2.1.2": {
+      "deep-equal": "npm:deep-equal@1.0.1",
+      "invariant": "npm:invariant@2.2.1",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "query-string": "npm:query-string@3.0.3",
+      "warning": "npm:warning@2.1.0"
+    },
     "npm:https-browserify@0.0.0": {
       "http": "github:jspm/nodelibs-http@1.7.1"
     },
@@ -407,6 +422,9 @@ System.config({
     "npm:punycode@1.3.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:query-string@3.0.3": {
+      "strict-uri-encode": "npm:strict-uri-encode@1.1.0"
+    },
     "npm:react-dom@15.2.1": {
       "react": "npm:react@15.2.1"
     },
@@ -418,6 +436,15 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "react": "npm:react@15.2.1",
       "redux": "npm:redux@3.5.2"
+    },
+    "npm:react-router@2.5.2": {
+      "history": "npm:history@2.1.2",
+      "hoist-non-react-statics": "npm:hoist-non-react-statics@1.2.0",
+      "invariant": "npm:invariant@2.2.1",
+      "loose-envify": "npm:loose-envify@1.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@15.2.1",
+      "warning": "npm:warning@2.1.0"
     },
     "npm:react@15.2.1": {
       "fbjs": "npm:fbjs@0.8.3",
@@ -480,6 +507,10 @@ System.config({
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:warning@2.1.0": {
+      "loose-envify": "npm:loose-envify@1.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     }
   }
 });

@@ -5,6 +5,7 @@
       "react": "npm:react@^15.2.1",
       "react-dom": "npm:react-dom@^15.2.1",
       "react-redux": "npm:react-redux@^4.4.5",
+      "react-router": "npm:react-router@^2.5.2",
       "redux": "npm:redux@^3.5.2",
       "redux-thunk": "npm:redux-thunk@^2.1.0"
     },

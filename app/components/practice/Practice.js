@@ -3,9 +3,9 @@ import Exercise from './Exercise';
 import Clear from './Clear';
 import Add from './Add';
 import { connect } from 'react-redux';
-import { fetchExercisesAction } from '../actions';
+import { fetchExercisesAction } from './actions';
 
-export class Exercises extends React.Component {
+export class Practice extends React.Component {
 
   componentWillMount() {
     this.props.dispatch(fetchExercisesAction());
@@ -41,4 +41,4 @@ export default connect((state) => {
     exercises: state.exercises,
     isFetching: state.isFetching
   }
-})(Exercises)
+})(Practice)

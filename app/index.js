@@ -4,7 +4,8 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import rootReducer from './reducers'
-import Exercises from './components/Exercises'
+import Practice from './components/practice'
+import Search from './components/search'
 
 const store = createStore(
   rootReducer,
@@ -14,5 +15,5 @@ const store = createStore(
 // dit kan ook
 // const store = applyMiddleware(thunk)(createStore)(rootReducer)
 
-render(<Provider store={store}><Exercises /></Provider>,
+render(<Provider store={store}><Practice /></Provider>,
        document.getElementById('app'))
