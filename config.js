@@ -232,6 +232,9 @@ System.config({
     },
     "app/components/practice": {
       "main": "Practice.js"
+    },
+    "app/components/nav": {
+      "main": "Nav.js"
     }
   },
 
